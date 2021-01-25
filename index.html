@@ -51,7 +51,9 @@ hr {
   <div class="middle">
     <h1>COMING SOON</h1>
     <hr>
-    <p id="demo" style="font-size:30px"></p>
+    <p id="time" style="font-size:30px"></p>
+    <hr>
+    <h2>Our developers are working hard to bring you the best site possible.</h2>
   </div>
   <div class="bottomleft">
     <p></p>
@@ -84,7 +86,7 @@ var countdownfunction = setInterval(function() {
   // If the count down is over, write some text 
   if (distance < 0) {
     clearInterval(countdownfunction);
-    document.getElementById("demo").innerHTML = "EXPIRED";
+    document.getElementById("time").innerHTML = "EXPIRED";
   }
 }, 1000);
 </script>
