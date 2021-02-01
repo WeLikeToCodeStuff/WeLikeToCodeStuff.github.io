@@ -1,95 +1,122 @@
-<!DOCTYPE html>
 <html>
-<style>
-body, html {
-  height: 100%;
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <meta name="description" content="We are a team of developers that like to develop random things and just code.">
+        <meta name="author" content="WeLikeToCodeStuff">
+        <meta name="keywords" content="WeLikeToCodeStuff">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.8.6/dist/semantic.min.js"></script>
+        <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+        <title>WeLikeToCodeStuff</title>
+    </head>
+    <body onload="toastOnLoad()"></body>
+        <style>
+        /*body {
+            font-family: 'Oswald', sans-serif;
+            background-image: linear-gradient(-90deg, #81a36e, #1abe04);
+        }*/
+            /* Style to center grid column */
+    .col-centered{
+        float: none;
+        margin: 0 auto;
+    }
+    
+    .row{
+        background: #dbdfe5;
+    }
+    .demo-content{
+        padding: 25px;
+        font-size: 18px;
+        background: #abb1b8;
+    }
+        body {
+    background: #151D21;
+    background-image: url('http://danidev.net/images/bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+        .center {text-align: center;}
+.vertical-center {
   margin: 0;
-}
-
-.bgimg {
-  background-image: url('https://w3schools.com/w3images/forestbridge.jpg');
-  height: 100%;
-  background-position: center;
-  background-size: cover;
-  position: relative;
-  color: white;
-  font-family: "Courier New", Courier, monospace;
-  font-size: 25px;
-}
-
-.topleft {
-  position: absolute;
-  top: 0;
-  left: 16px;
-}
-
-.bottomleft {
-  position: absolute;
-  bottom: 0;
-  left: 16px;
-}
-
-.middle {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
-
-hr {
-  margin: auto;
-  width: 40%;
+.container1 {
+  height: 200px;
+  position: relative;
 }
-</style>
-<body>
-
-<div class="bgimg">
-  <div class="topleft">
-    <img src="https://avatars.githubusercontent.com/u/71912281?s=200&v=4"></img>
-  </div>
-  <div class="middle">
-    <h1>COMING SOON</h1>
-    <hr>
-    <p id="time" style="font-size:30px"></p>
-    <hr>
-    <h2>Our developers are working hard to bring you the best site possible.</h2>
-  </div>
-  <div class="bottomleft">
-    <p></p>
-  </div>
-</div>
-
-<script>
-// Set the date we're counting down to
-var countDownDate = new Date("Feb 1, 2021 12:00:00").getTime();
-
-// Update the count down every 1 second
-var countdownfunction = setInterval(function() {
-
-  // Get todays date and time
-  var now = new Date().getTime();
-  
-  // Find the distance between now an the count down date
-  var distance = countDownDate - now;
-  
-  // Time calculations for days, hours, minutes and seconds
-  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-  // Output the result in an element with id="demo"
-  document.getElementById("time").innerHTML = days + "d " + hours + "h "
-  + minutes + "m " + seconds + "s ";
-  
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(countdownfunction);
-    document.getElementById("time").innerHTML = "EXPIRED";
-  }
-}, 1000);
-</script>
-
-</body>
+md-success-toast-theme {
+    background-color: green;
+}
+        </style>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">WLTCS</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="github">Our Work</a>
+                  </li>
+            </div>
+          </nav>
+          <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+            <div class="toast-header">
+               <i class="fa fa-globe"></i>
+              <strong class="me-auto"> WLTCS</strong>
+              <small>Just Now!</small>
+              <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+            </div>
+            <div class="toast-body md-success-toast-theme">
+              Site offline on XX/XX/XX XX:XX For An Update
+            </div>
+          </div>
+        </div>
+          <script>
+            function toastOnLoad() {
+                $('.toast').toast('show');
+                
+            }
+            </script>
+        <div class="container-fluid">
+            
+            <h1 class="center">Welcome To The Official WeLikeToCodeStuff Site</h1>
+<!--            <div class="position-relative m-4">
+                <div class="progress visually-hidden" style="height: 1px;">
+                  <div class="progress-bar visually-hidden" role="progressbar" style="width: 50%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                </div>
+                <a type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-outline-primary rounded-pill" style="width: 2rem; height:2rem;" href="#about"><i class="fas fa-bookmark"></i></a>
+                <a type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-outline-primary rounded-pill" style="width: 2rem; height:2rem;" href="github"><i class="fab fa-github"></i></a>
+                <a type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-outline-primary rounded-pill" style="width: 2rem; height:2rem;" href="https://discord.gg/wedonthaveadiscord" target="_blank"><i class="fab fa-discord"></i></a>
+              </div>-->
+              <div class="container my-3">
+                <div class="col-md-12 text-center">
+                    <a href="#about" class="btn btn-outline-primary"><i class="fas fa-bookmark"></i> About</a>&nbsp;
+                    <a href="github.html" class="btn btn-outline-warning"><i class="fab fa-github"></i> Github</a>&nbsp;
+                    <a href="https://discord.gg/wedonmthaveadsicorddontask" class="btn btn-outline-success"><i class="fab fa-discord" target="_blank"></i> Discord</a>
+                </div>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <div class="center" id="about" name="about">
+                <h2>Hi! We are WeLikeToCodeStuff (WLTCS).</h2>
+                <br>
+                <h3>We are a team of hard working developers that love to code.</h3>
+                <br>
+                <h3>We opensource everything for the community because we dont want paywalls.</h3>
+                <br><br>
+            </div>
+        </div><!--/container-->
+    </body>
 </html>

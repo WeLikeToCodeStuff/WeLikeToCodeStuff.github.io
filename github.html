@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Our Projects</title>
+</head>
+<html>
+    <head>
+        <title>DaniDev</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.element::-webkit-scrollbar { width: 0 !important }
+
+body {
+    background: #151D21;
+    background-image: url('http://danidev.net/images/bg.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+    display: inline-flex;
+    white-space: nowrap;
+}
+
+a:hover {
+    color: #ff7a7a;
+}
+
+header .logo a {
+	background-image: url("http://danidev.net/images/logo.png");
+	background-size: 90px;
+	background-repeat: no-repeat;
+	display: inline-block;
+	height: 100px;
+	width: 111px;
+	text-indent: -999999px;
+	position: relative;
+    top: -15px;
+}
+
+li:first-child {
+    float: left; 
+}
+
+li {
+    display: inline-block;
+    padding-right: 7%;
+    margin: 10px 0 0 0;
+    font-size: 36px;
+}
+
+.topnav {
+    list-style: none;
+    font-family: 'Roboto Thin';
+    color: aliceblue;
+    margin: 50px 0 0 0;
+    text-align: right;
+}
+
+section {
+    text-align: center;
+    padding: 8%;
+}
+
+section header {
+    margin-top: 0px;
+    font-family: 'Roboto Thin';
+    font-size: 62px;
+    margin-bottom: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.video {
+    margin-top: 20px;
+}
+
+section div {
+    font-family: 'Roboto Thin';
+    font-size: 32px;
+    line-height: 55px;
+    text-align: left;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px;
+}
+
+.features {
+    margin-top: auto;
+	color: gray;
+	padding: 30px 0px 0px 0px;
+	display: flex;
+    flex-direction: row;
+}
+
+.features figure {
+    margin: auto;
+    padding: 5px;
+	text-align: center;
+    width: 320px;
+}
+
+.features figure img {
+	border-radius: 0%;
+	width: 320px;
+	height: 180x;
+}
+
+figure img:hover {
+    filter: brightness(0.7);
+}
+
+figure figcaption {
+    font-family: 'Roboto Thin';
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 100px;
+}
+
+footer {
+    font-family: 'Roboto Thin';
+    text-align: center;
+    background-attachment: scroll;
+    background-position: 0% 0%;
+    position: fixed;
+    bottom: 0pt;
+}
+
+@media screen and (max-width: 1140px) {
+    .features {
+        display: block;
+    }
+
+    figure figcaption {
+        font-family: 'Roboto Thin';
+        font-size: 20px;
+        margin-top: 10px;
+        margin-bottom: 100px;
+    }
+
+    li {
+        font-size: 24px;
+    }
+
+    section div {
+        font-family: 'Roboto Thin';
+        font-size: 24px;
+        line-height: 36px;
+        text-align: left;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    li {
+        font-size: 14px;
+    }
+
+    .features figure img {
+        width: 240px;
+        height: 135x;
+    }
+
+    section header {
+        font-size: 36px;
+    }
+
+    .video {
+        margin-top: 50px;
+    }
+
+    section div {
+        font-family: 'Roboto Thin';
+        font-size: 16px;
+        line-height: 24px;
+        text-align: left;
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    li {
+        font-size: 12px;
+    }
+
+    .features figure img {
+        max-width:90%;
+        height:auto;
+    }
+}
+
+
+        </style>
+    </head>
+    <body>
+
+        <section>
+            <header class="video">
+                Projects 
+            </header>
+
+            <div>
+                Here are a few of our favorite 
+                projects we have made!
+            </div>
+
+            <section class="features">
+            
+                    <figure>
+                        <a href="https://github.com/WeLikeToCodeStuff/WeLikeToCodeStuff.github.io" target="_blank"><img src="https://avatars.githubusercontent.com/u/71912281?s=200&v=4" alt="Making a Game in one day (12 hours)"></a>
+                        <figcaption>
+                            <a href="https://github.com/WeLikeToCodeStuff/WeLikeToCodeStuff.github.io" target="_blank">This Website</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://github.com/WeLikeToCodeStuff/Minecraft-Server-Creator" target="_blank"><img src="https://avatars.githubusercontent.com/u/71912281?s=200&v=4" alt="Making a Game in 48 Hours for LD44 (Jam)"></a>
+                        <figcaption>
+                            <a href="https://github.com/WeLikeToCodeStuff/Minecraft-Server-Creator" target="_blank">Minecraft Server Creator</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <a href="https://github.com/WeLikeToCodeStuff/iptools" target="_blank"><img src="https://avatars.githubusercontent.com/u/71912281?s=200&v=4" alt="1 Year of Learning Game Development with Unity"></a>
+                        <figcaption>
+                            <a href="https://github.com/WeLikeToCodeStuff/iptools" target="_blank">IP Tools</a>
+                        </figcaption>
+                    </figure>
+                </section>
+
+                <section class="features">
+            
+                        <figure>
+                            <a href="https://github.com/WeLikeToCodeStuff/ScaleBounce" target="_blank"><img src="https://avatars.githubusercontent.com/u/71912281?s=200&v=4" alt="I Made a gladiator simulation game"></a>
+                            <figcaption>
+                                <a href="https://github.com/WeLikeToCodeStuff/ScaleBounce" target="_blank">Scale Bounce (AfterEffects)</a>
+                            </figcaption>
+                        </figure>
+    
+                        <figure>
+                            <a href="https://github.com/WeLikeToCodeStuff/Example-Node-Package" target="_blank"><img src="https://avatars.githubusercontent.com/u/71912281?s=200&v=4" alt="A Day in the Life of an Indie Game Developer & Student"></a>
+                            <figcaption>
+                                <a href="https://github.com/WeLikeToCodeStuff/Example-Node-Package" target="_blank">Making A Node Package</a>
+                            </figcaption>
+                        </figure>
+    
+                        <figure>
+                            <a href="https://github.com/WeLikeToCodeStuff/chatroom" target="_blank"><img src="https://avatars.githubusercontent.com/u/71912281?s=200&v=4" alt="6 Months of Learning Game Development in Unity (Progress & Result)"></a>
+                            <figcaption>
+                                <a href="https://github.com/WeLikeToCodeStuff/chatroom" target="_blank">Chatroom</a>
+                            </figcaption>
+                        </figure>
+                    </section>
+
+        </section>
+    </body>
+</html>
+
+    
+
